@@ -36,8 +36,11 @@ Class文件是java虚拟机执行引擎的数据入口，Java虚拟机不和包�
 	- 主要存放了编译器可知的各种数据类型、对象引用（reference类型）
 	- Java 虚拟机栈会出现两种异常：StackOverFlowError 和 OutOfMemoryError
 - 本地方法栈
-	- 
+	- 为虚拟机使用到的 Native 方法服务
+	- 用于存放该本地方法的局部变量表、操作数栈、动态链接、出口信息
+	- 也会出现 StackOverFlowError 和 OutOfMemoryError 两种异常
 - 堆内存
+	- 存放对象实例，几乎所有的对象实例以及数组都在这里分配内存
 - 方法区
 - 运行时常量池
 - 直接内存
