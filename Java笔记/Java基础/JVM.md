@@ -33,8 +33,10 @@ Class文件是java虚拟机执行引擎的数据入口，Java虚拟机不和包�
 	- 唯一不会出现OutOfMemoryError的区域，它的生命周期随着线程的创建而创建，随着线程的结束而死亡
 - 虚拟机栈-栈内存
 	- 线程私有的，它的生命周期和线程相同，描述的是 Java 方法执行的内存模型
-	- 
+	- 主要存放了编译器可知的各种数据类型、对象引用（reference类型）
+	- Java 虚拟机栈会出现两种异常：StackOverFlowError 和 OutOfMemoryError
 - 本地方法栈
+	- 
 - 堆内存
 - 方法区
 - 运行时常量池
